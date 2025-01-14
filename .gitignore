@@ -1,0 +1,10 @@
+modules/__pycache__
+__pycache__
+pyside6-uic
+Pipfile
+.vscode
+*.session
+*.session-journal
+links.txt
+log.txt
+.idea/.gitignor
