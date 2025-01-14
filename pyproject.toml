@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "tg-sender-inviter"
+version = "0.1.0"
+description = ""
+authors = ["S1erra-Xray <none@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "3.12.8"
+PySide6 = "^6.8.0"
+sqlalchemy = "^2.0.37"
+telethon = "^1.38.1"
+aiohttp="^3.11.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
