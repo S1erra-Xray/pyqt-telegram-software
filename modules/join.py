@@ -1,3 +1,4 @@
+import asyncio
 from asyncio import sleep
 
 from PySide6.QtWidgets import QLineEdit, QProgressBar, QSpinBox
@@ -70,11 +71,11 @@ class joinChat(CustomThread):
                         chats_arr.remove(c)
                         # вроде должно выполняться при любом исключении
                     self.progress.setValue(x)
-                    sleep(self.time_sleep)
+                    await sleep(self.sleep_time)
 
                 await self.success(
                     f"Успешно присоединились к чатам в количестве {len(chats_arr)} шт"
                 )
-                self.client.disconnect()
+                client.disconnect()
 
         asyncio.run(main())
