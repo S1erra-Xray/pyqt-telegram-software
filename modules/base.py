@@ -46,7 +46,7 @@ class CustomThread(QThread, Vars):
         self.ok_sig.emit(text)
         self.exec_()
 
-    @Signal()
+    @Signal
     def exec_(self) -> int:
         self.finished.emit()
         return super().exec()
