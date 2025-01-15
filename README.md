@@ -1,3 +1,7 @@
+## Pay attention
+
+This project provided as is and unmaintained at this moment
+
 ## About
 
 Telegram GUI software for:
